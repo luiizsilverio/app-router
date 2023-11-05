@@ -1,3 +1,4 @@
+import { OwnerRepo } from "@/components/OwnerRepo";
 
 async function delayFetch(url: string, delay: number) {
   await new Promise(resolve => setTimeout(resolve, delay));
@@ -6,7 +7,7 @@ async function delayFetch(url: string, delay: number) {
 }
 
 async function getData() {
-  const data = await delayFetch("https://api.github.com/users/luiizsilverio/repos", 1500);
+  const data = await delayFetch("https://api.github.com/users/luiizsilverio/repos", 0);
   return data;
 }
 
@@ -30,6 +31,7 @@ return (
       {data.map(item => (
         <div key={item.id}>
           <a href={item.html_url}>{item.name}</a>
+          <OwnerRepo avatar_url={item.owner.avatar_url} login={item.owner.login} />
         </div>
       ))}
     </div>
