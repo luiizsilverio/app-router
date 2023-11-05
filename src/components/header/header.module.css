@@ -1,0 +1,9 @@
+.header {
+  color: #fff;
+  border-bottom: 1px solid #e1e2e3;
+  padding: 0 1rem 1rem;
+}
+
+.header a {
+  padding: 8px;
+}

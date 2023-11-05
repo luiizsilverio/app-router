@@ -1,8 +1,9 @@
+"use client"
 
 export default function Contatos() {
   return ( 
     <div>
-      <h1>Contatos</h1>
+      <h2>Contatos</h2>
     </div>
   )
 }
