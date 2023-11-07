@@ -1,0 +1,31 @@
+.container {
+  border: 1px solid #d5d5c6;
+  padding: 12px 12px 0;
+  border-radius: 12px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.container a {
+  color: lightsalmon;
+  font-weight: bold;
+}
+
+.container p {
+  font-size: 14px;
+}
+
+.container span {
+  font-size: 10px;
+  color: #e1e2e3;
+  padding-left: 12px;
+}
+
+.container svg {
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.container svg:hover {
+  transform: scale(1.1);
+}

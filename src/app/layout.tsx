@@ -30,7 +30,9 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <Header />
-        {children}
+        <section className="main">
+          {children}
+        </section>
       </body>
     </html>
   )

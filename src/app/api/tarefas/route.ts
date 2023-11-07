@@ -20,3 +20,10 @@ export async function PUT(request: Request) {
   tarefas[Number(index)] = data.name;
   return NextResponse.json({ ok: true });
 }
+
+export async function DELETE(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const index = searchParams.get("posicao");
+  tarefas.splice(Number(index), 1);
+  return NextResponse.json({ ok: true });
+}

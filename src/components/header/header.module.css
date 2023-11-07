@@ -7,3 +7,14 @@
 .header a {
   padding: 8px;
 }
+
+.header a:hover {
+  color: lightsalmon;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}

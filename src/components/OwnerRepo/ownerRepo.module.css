@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0 12px;
+  background-color: rgba(155, 155, 155, 0.1);
+  border-radius: 8px;
+  flex: 1;
+}
+
+.container p {
+  font-weight: bold;
+}
+
+.container span {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.button {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 12px;
+  padding-right: 12px;
+}
